@@ -1,7 +1,8 @@
-h1{
- font-family: Arial;
-}
 
+* {
+    margin: 0;
+    padding: 0;
+}
 .header{
     display: flex;
     justify-content: space-between; /* Distribuye las imágenes con espacio igual entre ellas */
@@ -9,7 +10,6 @@ h1{
     padding: 10px;
     background-color: #ffffff;
     
-
 }
 .menu{
   margin-right: 80px !important;
@@ -17,6 +17,7 @@ h1{
 
 .logo-banorte{
    width: 20%;
+   margin-left: 10%;
 }
 .boton-home
 {
@@ -30,4 +31,11 @@ height: 102px;
 
     margin-left: 20px;
     height: 102px;
+}
+.sombreado {
+    color: #fff;
+    background-color: #720202;
+    box-shadow: rgba(174, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   
 }

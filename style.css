@@ -1,3 +1,33 @@
 h1{
  font-family: Arial;
 }
+
+.header{
+    display: flex;
+    justify-content: space-between; /* Distribuye las imágenes con espacio igual entre ellas */
+    align-items: center; /* Centra verticalmente las imágenes */
+    padding: 10px;
+    background-color: #ffffff;
+    
+
+}
+.menu{
+  margin-right: 80px !important;
+}
+
+.logo-banorte{
+   width: 20%;
+}
+.boton-home
+{
+
+height: 102px;
+}
+.boton-servicios{
+    height: 102px;
+}
+.boton-preguntas{
+
+    margin-left: 20px;
+    height: 102px;
+}

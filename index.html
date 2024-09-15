@@ -1,13 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banorte</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styles-encuesta.css">
+    <link
+        rel="https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css">
+
 </head>
+
 <body>
-    <h1>Titulo</h1>
+    <header class="header">
+        <img class="logo-banorte" src="Imagenes-principio/LogoBanorte.png" alt="Logo de Banorte">
+        <div class="menu">
+            <a href="#"><img class="boton-home" src="Imagenes-principio/inicio.png" alt="Boton de inicio"></a>
+            <a href="#cuenta"><img class="boton-servicios" src="Imagenes-principio/servicios.png" alt="Logo Servicios"></a>
+            <a href="#encuesta"><img class="boton-preguntas" src="Imagenes-principio/preguntas.png" alt="Logo Preguntas"></a>
+        </div>
+    </header>
+    <div class="inicio">
+
+        <h1> Conéctate con tu futuro financiero y haz que tus decisiones sumen. </h1>
+        <h3> Se como tus idolos, el éxito de ellos es la correcta educación financiera. </h3>
+        <button class="btnInicio"><a href="#introduccion">Más información</a></button>
+    </div>
+    <img class="sombra" src="Imagenes-principio/sombra.png" alt="">
+    <img class="caneloimg" src="Imagenes-principio/canelo.png">
+    
+    <div class="introduccion">
+        <div class="fondoAnimado">
+            <canvas id="nokey" width="800" height="800">
+                Error
+            </canvas>            
+        </div>
+        <div id="introduccion" class="banner">
+            <img src="Imagenes-principio/bannerJoven.png" alt="">
+        </div>
+        <h2>Sabemos que buscas crecer, alcanzar tus metas y disfrutar del presente sin complicaciones 💸</h2>
+        <p>¿Listo para mejorar la forma en que manejas tu dinero? Abrir una cuenta en banco Banorte es súper fácil y te
+            da acceso a una tonelada de ventajas que harán tu vida financiera mucho más simple y emocionante.</p>
+        <button  class="btnInicio"><a href="#encuesta">Continuar</a></button>
+
+    </div>
+    <div class="encuesta" id="encuesta">
+        <h2>¡Queremos escucharte! 🤞</h2>
+        <p>Contesta las siguientes preguntas para poder brindarte un servicio de calidad.</p>
+        <div class="formulario">
+            <label class="labelForm">1.- ¿Cual es tu nombre completo? 🤔<br></label>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Nombre" required>
+                <label for="name" class="form__label">Name</label>
+            </div>
+            <label class="labelForm">2.- ¿Cuál es tu e-mail? 📄<br></label>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Email" required>
+                <label for="email" class="form__label">Email</label>
+            </div>
+            <label class="labelForm">3.- ¿Cuál es tu número telefónico?📲<br></label>
+            <div class="form__group field">
+                <input type="input" class="form__field" placeholder="Telefono" required>
+                <label for="telefono" class="form__label">Telefono</label>
+            </div>
+            <label class="labelForm">4.- ¿Eres menor de edad? 👦🧑<br></label>
+            <button onclick="select(1)" id="1"><a href="https://www.banorte.com/cms/banorte/cuentassinchequera/sumamenores/Banorte-Folleto-Suma-Menores.pdf">Si</a></button> <button onclick="select(2)" id="2">No</button><br>
+            <label class="labelForm">5.- ¿Conoces qué es una cuenta de banco?🏦<br></label>
+            <button onclick="select(3)" id="3">Si</button> <button onclick="select(4)" id="4"><a href="#cuenta">No</a></button><br>
+            <label class="labelForm">6.- ¿Deseas mejorar tu futuro financiero?💰<br></label>
+            <button onclick="select(5)" id="5"><a href="#correcto">Si</a></button> <button onclick="select(6)" id="6">No</button>
+            <h2 id="correcto">¡ENHORABUENA, ESTAS A NADA DE COMENZAR TU MUNDO FINANCIERO! 🎉 </h2>
+            <p>Recibirás un e-mail con los pasos para abrir una cuenta de banco con Banorte, agradecemos tu preferencia.
+            </p>
+            <button class="openAcc">Abrir una cuenta</button>
+        </div>
+        <div class="que-es-cuenta" id="cuenta">
+            <h3>Observa el video para que entiendas acerca de cuentas de banco. 👀📕</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/LYUBP8so7Os?si=pcrHpBDQyXrDbw-L" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
 </body>
+
 </html>

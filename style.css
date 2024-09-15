@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto";
+    scroll-behavior: smooth;
 }
+body {
+    font-family:'Arial';
+    background: radial-gradient(circle, #ee214a 50%, #9b001f 100%);
+    background-attachment: fixed;
+    height: 100vh;  /* Asegura que el fondo cubra toda la pantalla */
+    margin: 0;      /* Elimina los márgenes */
+    }
 .header{
     display: flex;
     justify-content: space-between; /* Distribuye las imágenes con espacio igual entre ellas */
@@ -11,24 +21,135 @@
     background-color: #ffffff;
     
 }
+
+/*inicio*/
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    color: white ;
+    text-align: left;
+    position: absolute; /* Posicionamiento absoluto para colocarlo en un lugar específico */
+               top: 0;             /* Alineado al borde superior */
+               left: 0;            /* Alineado al borde izquierdo */
+               margin-top: 190px;       /* Espaciado opcional */    
+               width: 50%;
+               margin-left: 7%;
+               font-size: 50px;
+               text-transform: uppercase;
+   }
+   h3{   
+       color: white;
+       text-align: left;
+       margin-left: 7%;
+       font-size: 22px;
+       margin-top: 280px;
+      }
+      .introduccion h2{   
+        color: white;
+        text-align: left;
+        margin-left: 7%;
+        margin-right: 7%;
+
+        font-size: 35px;
+        margin-top: 50px;
+        text-transform: uppercase;
+       }
+       .introduccion p{
+        margin-top: 2%;
+        font-size: 22px;
+        color: white;
+        margin-left: 7%;
+        margin-right: 7%;
+       }
+   .caneloimg{
+    top: 0;
+    right: 0;
+   position: absolute;
+   width: 50%;
+
+}
+   
+   .sombra {
+       z-index: -1;
+       width: 40%;
+       position: absolute;
+       top: 0;
+       right: 0;
+       margin-top: 10%;
+       margin-left: 45%;
+   }
+   .btnInicio {
+       margin-top: 5% !important;
+       margin-left: 10% !important;
+       appearance: none;
+       background-color: transparent;
+       border: 0.125em solid #ffffff;
+       border-radius: 0.9375em;
+       box-sizing: border-box;
+       color: #ffffff;
+       cursor: pointer;
+       display: inline-block;
+       font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+       font-size: 16px;
+       font-weight: 600;
+       line-height: normal;
+       margin: 0;
+       min-height: 3.75em;
+       min-width: 0;
+       outline: none;
+       padding: 1em 2.3em;
+       text-align: center;
+       text-decoration: none;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       user-select: none;
+       -webkit-user-select: none;
+       touch-action: manipulation;
+       will-change: transform;
+      }
+      
+      .btnInicio:disabled {
+       pointer-events: none;
+      }
+      
+      .btnInicio:hover {
+       color: #fff;
+       background-color: #750000;
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);
+      }
+      
+      .btnInicio:active {
+       box-shadow: none;
+       transform: translateY(0);
+      }
+   
+      
+
+
 .menu{
   margin-right: 80px !important;
 }
-
+.menu img{
+  cursor: pointer;
+}
 .logo-banorte{
    width: 20%;
    margin-left: 10%;
+   cursor: pointer;
 }
 .boton-home
 {
-
+cursor: pointer !important;
 height: 102px;
 }
 .boton-servicios{
     height: 102px;
+    cursor: pointer;
 }
 .boton-preguntas{
-
+    cursor: pointer;
     margin-left: 20px;
     height: 102px;
 }
@@ -38,4 +159,181 @@ height: 102px;
     box-shadow: rgba(174, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
    
+}
+
+/*Encuesta*/
+
+.encuesta {
+    text-align: center;
+    color: #fff;
+}
+
+.encuesta h2 {
+    font-size: 50px;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    src: url(GothamPro-Light.eot);
+    src: url(GothamPro-Light.woff2) format("woff2"), url(GothamPro-Light.woff) format("woff"), url(GothamPro-Light.ttf) format("truetype"), url(GothamPro-Light.svg#GothamPro-Light) format("svg"), url(GothamPro-Light.eot?#iefix) format("embedded-opentype");
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-top: 28%;
+    margin-bottom: 2%;
+}
+
+.encuesta p {
+    font-size: 25px;
+    margin-bottom: 5%;
+}
+
+.formulario .labelForm {
+    font-size: 25px;
+    /* border: solid #ffffff; */
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.formulario button {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #dddddd;
+    pointer-events: none;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #ff614c, #ef4a38);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+button {
+    appearance: none;
+    background-color: transparent;
+    border: 0.125em solid white;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+}
+
+button:disabled {
+    pointer-events: none;
+}
+
+button:hover {
+    color: #fff;
+    background-color: #720202;
+    box-shadow: rgba(174, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+button:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.sombreado {
+    color: #fff;
+    background-color: #720202;
+    box-shadow: rgba(174, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+
+}
+.openAcc{
+    margin-bottom: 20% !important;
+}
+
+canvas{
+    background-color: transparent;
+}
+
+.banner {
+    width: 100%;
+    margin-top: -320px;
+    height: 20%;
+}
+.banner img{
+    width: 100%;
+}
+
+
+.que-es-cuenta h3{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
 }
